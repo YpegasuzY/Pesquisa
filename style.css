@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    background-color: #E4B61A;
+  }
+  
+  header div {
+    display: flex;
+    align-items: center;
+  }
+  
+ header i {
+    font-size: 3rem;
+    margin-right: 15px;
+  }
+  
+ header h1 {
+    font-size: 28px;
+    margin: 0;
+  }
+  
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+header li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+header  a {
+    text-decoration: none;
+    color: #000;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
+  header  a:hover{
+    box-shadow: 1px 1px 5px black;
+    transition: 0.8s;
+    background-color: #ac8609;
+    font-size: 1.02rem;
+  }
+
+.menu {
+    cursor: pointer;
+}
+
+.menu button{
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 30px;
+}
+.menu button:hover{
+    box-shadow: 1px 1px 5px black;
+    transition: 0.8s;
+    background-color: #ac8609;
+    font-size: 1.02rem;
+}
+.subMenu {
+    display: none;
+    /* desaparecimento do conteúdo */
+    position: absolute;
+    /* deixar o título do topo */
+    background-color: #facf42fd;
+    /* cor de fundo */
+    text-align: center;
+    margin-left: -3rem;
+    border-radius: 10px;
+    margin-top: 5px;
+    z-index: 999; /* Define o índice z do menu para 999, garantindo que ele fique acima de todos os outros elementos */
+}
+.subMenu ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20vw;
+    justify-content: space-between;
+}
+
+.subMenu ul li{
+    display: block;
+}
+.subMenu a {
+    display: block;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.subMenu a:hover {
+    /* config. do menu */
+    box-shadow: 1px 1px 20px black;
+    transition: 0.5s;
+}
+ 
+  .subMenu.active {
+    display: block;
+  }
+
+  /* Animação CSS chamada "slideDown", para trazer animação ao clicar no botão */
+@keyframes slideDown {
+    /* Estado inicial da animação */
+    0% {
+        /* Trazer o elemento 100% para cima (-100% em relação à sua posição original) */
+        transform: translateY(-100%);
+    }
+    /* Estado final da animação */
+    100% {
+        /* Trazer o elemento de volta para sua posição original (0) */
+        transform: translateY(0);
+    }
+}
+  
+
+#sessao1{
+    padding: 4vw;
+    background-image: url(img/fundo\ javascripr.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#sessao1 div{
+    width: 40vw;
+}
+
+#sessao1 div p{
+    margin-top: 10px;
+}
+
+#sessao1 div ul li{
+    margin-top: 10px;
+    margin-left: 24px;
+}
+
+.sessao2{
+    padding: 2rem;
+    display: grid;
+    justify-content: right;
+    background: linear-gradient(180deg, rgba(41, 45, 51, 0.692) 0%, rgba(12, 13, 13, 0.712) 100%), url(img/fundo\ frame.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50vh;
+    align-items: center;
+}
+
+.sessao2 div{
+    width: 48vw;
+    text-align: justify;
+    color: white;
+}
+
+#sessao3{
+    padding: 5vw;
+    background-color: #FBE134;
+    display: flex;
+justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#sessao3 div{
+    width: 45%;
+    text-align: justify;
+    display: flex;
+    margin: 10px;
+}
+
+span{
+    font-weight: 900;
+}
+
+.div2{
+    padding: 1rem;
+    display: flex;
+    justify-content: left;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 10px;
+}
+.div2:hover{
+    box-shadow: 1px 1px 20px black;
+    border-radius: 20px;
+    transition: 1s;
+    border: solid 2px black;
+}
+
+.div1{
+    padding: 1rem;
+    display: flex;
+    justify-content: right;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 10px;
+}
+
+.div1:hover{
+    border: solid 2px black;
+    box-shadow: 1px 1px 20px black;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.react{
+    background-image: url(img/react\ fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.angular{
+    background-image: url(img/fundoAngular.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.vue{
+    background-image: url(img/vue\ fundo.jpg);
+    background-position: -1rem;
+    background-size: cover;
+    color: white;
+}
+
+.ember{
+    background-image: url(img/emberFundo.jpg);
+    background-position: 1.1rem;
+    background-size: cover;
+}
+
+.backbone{
+    background-image: url(img/backboneFundo.jpg);
+    background-position: -0.6rem;
+    background-size: cover;
+    color: white;
+}
+
+.knockout{
+    background-image: url(img/knockout\ fundo.jpg);
+    background-position: 1.1rem;
+    background-size: cover;
+}
+
+.marionette{
+    background-image: url(img/marionetteFundo.jpg);
+    background-position: -0.6rem;
+    background-size: cover;
+    color: white;
+}
+
+.ext{
+    background-image: url(img/extFundo.jpg);
+    background-position: -0.6rem;
+    background-size: cover;
+    color: white;
+}
+
+.ionic{
+    background-image: url(img/ionicFundo.jpg);
+    background-position: -0.6rem;
+    background-size: cover;
+    color: white;
+}
+
+.electron{
+    background-image: url(img/electronFundo.jpg);
+    background-position: -0.6rem;
+    background-size: cover;
+    color: white;
+}
+
+.sproutcore{
+    background-image: url(img/SproutCoreFundo.jpg);
+    background-position: 2rem;
+    background-size: cover;
+}
+
+.sencha{
+    background-image: url(img/SenchaTouchfundo.jpg);
+    background-position: 1.1rem;
+    background-size: cover;
+}
+
+.cordova{
+    background-image: url(img/CordovaFundo.jpg);
+    background-position: 1.1rem;
+    background-size: cover;
+}
+
+.node{
+    background-image: url(img/node\ fundo.jpg);
+    background-position: 1.1rem;
+    background-size: cover;
+}
+
+.div1 div{
+    display: flex;
+    justify-content: center;
+}
+
+.div2 div{
+    display: flex;
+    justify-content: center;
+}
+
+.div1 div button{
+    background-color: #FBE134;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: solid 1px gray;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.div2 div button{
+    background-color: rgb(31, 31, 31);
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: solid 1px #FBE134;
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+}
+
+.div2 div button:hover{
+    background-color: #FBE134;
+    padding: 0.6rem;
+    border: solid 1px gray;
+    transition: 0.6s;
+    color: black;
+}
+
+.div1 div button:hover{
+    background-color: rgb(31, 31, 31);
+    padding: 0.6rem;
+    border: solid 1px #FBE134;
+    transition: 0.6s;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    background-color: #E4B61A;
+    padding: 1rem;
+}
+.divFooter{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.divFooter i{
+    font-size: 5rem;
+}
